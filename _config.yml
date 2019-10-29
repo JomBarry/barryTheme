@@ -1,0 +1,117 @@
+## 数据控制器
+
+# loading style
+# 1-30
+loadingStyle: 11
+
+# 总导航(nav)
+menu:
+  Home:
+    url: /index.html
+  Diary:
+    url: /diary
+  ProgramLanguage:
+    url: /programcategroy
+    item:
+      -
+        - C: /c
+      -
+        - Hexo: /kexo
+        - Android: /android
+        - Html: /html
+        - CSS: /css
+        - JavaScript: /javascript
+        - VueJS: /vuejs
+        - PHP: /php
+        - WeChatMiniProgram: /wechatminiprogram
+      -
+        - Java: /javaprogram
+        - Spring: /springprogram
+        - SpringBoot: /bpringboot
+        - SpringCloud: /bpringcloud
+      -
+        - MySQL: /mysql
+        - MariaDB: /mariadb
+  NetworkTech:
+    url: /networkcategroy
+    item:
+      - NetworkTechnology: /networktechnology
+      - NetworkSecurity: /networksecurity
+  SoftwareUse:
+    url: /softwarecategroy
+    item:
+      - AnroidStudio: /anroidstudio
+      - Idea: /idea
+      - Git: /git
+      - WechtDevelopmentTools: /wechtdevelopmenttools
+  TimerShaft:
+    url: /timershaft
+  About:
+    url: /about
+
+# index-1
+## Banner
+IndexBanner:
+  - /images/index/1/banner1.jpg
+  - /images/index/1/banner2.jpg
+  - /images/index/1/banner3.jpg
+index_1_3:
+  关于我:
+    基本介绍:
+      博名: Jom Barry
+      职业: 程序员
+      爱好: 分享技术，学习技术
+    联系方式:
+      emil: 13396298960@163.com
+      P: 13396298960
+index_1_3_1:
+  /images/index/1/home.png: /about
+  /images/index/1/email.png: /
+  /images/index/1/qq.png: /
+  /images/index/1/github.png: /
+
+# index-2
+# 标题选项中自动识别导航栏中有子标题的项
+index_2:
+  title: 热门博文
+  icon: /images/index/2/hot.png
+
+# index-3
+index_3_l_1:
+  title: 博文推荐
+  icon: /images/index/3-l-1/recommend.png
+index_3_l_2:
+  title: 博文
+  subTitle: 最新
+  icon: /images/index/3-l-2/new.png
+index_3_r_fixed_1:
+  title: 网站信息
+  subTitle: （统计）
+  content:
+    主题模板: Barry Theme
+    建站时间: 2019.10.23
+    建站模板: <a href="https://hexo.io" target="_blank">HEXO</a> | <a href="https://v3.bootcss.com" target="_blank">BootStrap</a> | ...
+    访问次数: <span id="busuanzi_value_site_pv" style="color:#80d0c7"></span> 次
+    访客人数: <span id="busuanzi_value_site_uv" style="color:#80d0c7"></span> 人
+    站点访问地区: 实时统计
+  img: /images/wechat.png
+index_3_r_fixed_2:
+  title: 友情链接
+  content:
+    Hexo: https://hexo.io
+    BootStrap: https://www.bootcss.com
+    Animate: http://www.animate.net.cn
+    Iconfont: https://www.iconfont.cn
+    WebGradients: https://webgradients.com
+    REV~LVERMAPS: https://www.revolvermaps.com
+    Hexo-Renderer-EJS: https://ejs.bootcss.com
+    Pure: http://ibruce.info/2015/04/04/busuanzi
+    Hexo-Permalink-PinYin: https://github.com/viko16/hexo-permalink-pinyin
+    Hexo-Yam: https://github.com/curbengh/hexo-yam
+    Hexo-Generator-SEO-Friendly-Sitemap: https://github.com/ludoviclefevre/hexo-generator-seo-friendly-sitemap
+
+# Footer
+siteMessage:
+  Copyright: 2019
+  备案号: 鲁ICP备xxxxxxx号
+  c: Barry 技术支持

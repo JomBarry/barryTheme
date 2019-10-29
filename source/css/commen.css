@@ -1,0 +1,111 @@
+
+/* Total settings */
+body {
+    padding-top: 70px;
+    background-image: linear-gradient(to top, #c4c5c7 0%, #dcdddf 52%, #ebebeb 100%);
+}
+
+/* Scroll Program */
+.progress-bar {
+    background-image: linear-gradient(to right, #92fe9d 0%, #00c9ff 100%);
+    height: 5px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+}
+
+/* 省略 */
+.omitOne {
+    width: 100%;
+    table-layout: fixed;
+    word-break: break-all;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.omitTwo {
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* 设置行数 */
+    -webkit-box-orient: vertical;
+}
+
+.omitThree {
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* 设置行数 */
+    -webkit-box-orient: vertical;
+}
+
+/* header */
+.header-main {
+    background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
+    border: 0;
+}
+
+.header-main a {
+    color: whitesmoke;
+}
+
+.nav-nav-main-title {
+    background-image: linear-gradient(-60deg, #ff5858 0%, #f09819 100%) !important;
+}
+
+.nav-nav-main-content > .open > a {
+    background-image: linear-gradient(60deg, #f9d423 0%, #ff4e50 100%) !important;
+}
+
+.nav-nav-main-content > li > a:focus {
+    background-image: linear-gradient(-60deg, #ff5858 0%, #f09819 100%) !important;
+}
+
+.nav-nav-main-content > li > a:hover {
+    background-image: linear-gradient(60deg, #f9d423 0%, #ff4e50 100%) !important;
+}
+
+.nav-search-masthead {
+    line-height: 50px !important;
+    color: whitesmoke;
+    font-size: medium;
+}
+
+/* footer */
+.bs-docs-footer {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-image: linear-gradient(to right, #868f96 0%, #596164 100%);
+    color: whitesmoke;
+}
+
+a {
+    color: #666666;
+    text-decoration: none;
+}
+
+a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+.bs-docs-footer a {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.footer-main > .row {
+    padding-bottom: 10px;
+    border-bottom: #777777 solid 1px;
+    margin-bottom: 10px;
+}
+
+.footer-QRCode>div{
+    margin: 5px;
+    display: inline-block;
+}

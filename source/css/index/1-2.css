@@ -1,0 +1,10 @@
+
+.index-1-2-main {
+    margin: 15px 0 0 0;
+    height: 100px;
+}
+
+.index-1-2-main > div > div {
+    height: 100px;
+    background-image: linear-gradient(to right, #92fe9d 0%, #00c9ff 100%);
+}

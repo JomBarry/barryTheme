@@ -1,0 +1,295 @@
+<!-- index-2 -->
+<!-- 在手机上\平板不显示 -->
+<link rel="stylesheet" href="/css/index/2.css">
+<div class="row index-2-main hidden-md hidden-xs">
+    <div class="container index-2-container">
+        <img src="/images/index/2/titleHot.png" alt="" class="img-rounded img-responsive">
+        <div class="index-2-content">
+            <!-- 标题栏 一级导航栏 -->
+            <div class="index-2-titles">
+                <h2 class="index-2-title">
+                    <strong><%= theme.index_2.title %></strong>
+                </h2>
+                <ul class="nav nav-tabs">
+                    <li class="active">
+                        <a data-toggle="tab" href="#hot">
+                            <img src="<%= theme.index_2.icon %>" alt="" class="img-rounded img-responsive"
+                                 style="height: 20px">
+                        </a>
+                    </li>
+                    <% for (const item0 in theme.menu) { %>
+                        <% if (theme.menu[item0].item) { %>
+                            <li><a class="omitOne" data-toggle="tab" href="#<%= item0 %>"><%= __(item0) %></a></li>
+                        <% } %>
+                    <% } %>
+                </ul>
+            </div>
+            <!-- 内容栏 -->
+            <div class="tab-content">
+                <!-- hot区 -->
+                <div id="hot" class="tab-pane fade in active index-2-hot-main">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 index-2-hot-1-col">
+                            <a class="tagScale index-2-hot-1-link" href="#">
+                                <div class="index-2-hot-1-blog">
+                                    <div class="index-2-hot-1-blog-img">
+                                        <img src="http://dpic.tiankong.com/0t/ul/QJ8408078064.jpg" alt=""
+                                             class="img-responsive imgScale">
+                                    </div>
+                                    <h3 class="omitOne"><strong>经典说说心情短语：改变别人，不如改变</strong></h3>
+                                    <div class="index-2-hot-1-blog-desc">
+                                        <div>
+                                            <span class="omitOne">adnroid</span>
+                                        </div>
+                                        <div>
+                                            <span class="omitOne">2019.13.20</span>
+                                        </div>
+                                        <div>
+                                            <span class="omitOne">查看：123+</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 index-2-hot-2-col">
+                            <div class="row index-2-hot-2-row">
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 index-2-hot-2-blog-col">
+                                    <a class="tagScale index-2-hot-2-blog-link" href="#">
+                                        <div class="index-2-hot-2-blog">
+                                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 index-2-hot-2-blog-img">
+                                                    <img src="http://img.lemeitu.com/m00/ab/e5/829c7ccaabc4d620326453bfc74b3f79__w.jpg"
+                                                         alt="" class="imgScale img-responsive">
+                                            </div>
+                                            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+                                                <div class="index-2-hot-2-blog-text">
+                                                    <h4 class="omitOne"><strong>很多人不需要说再见，因为</strong></h4>
+                                                    <p class="omitTwo">在本章中，我们将学习 Bootstrap 对图片的支持。Bootstrap
+                                                        提供了三个可对图片应用简单样式的 class：</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 index-2-hot-2-blog-col">
+                                    <a class="tagScale index-2-hot-2-blog-link" href="#">
+                                        <div class="index-2-hot-2-blog">
+                                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 index-2-hot-2-blog-img">
+                                                <img src="http://img.lemeitu.com/m00/ab/e5/829c7ccaabc4d620326453bfc74b3f79__w.jpg"
+                                                     alt="" class="imgScale img-responsive">
+                                            </div>
+                                            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+                                                <div class="index-2-hot-2-blog-text">
+                                                    <h4 class="omitOne"><strong>很多人不需要说再见，因为</strong></h4>
+                                                    <p class="omitTwo">在本章中，我们将学习 Bootstrap 对图片的支持。Bootstrap
+                                                        提供了三个可对图片应用简单样式的 class：</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="row index-2-hot-2-row">
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 index-2-hot-2-blog-col">
+                                    <a class="tagScale index-2-hot-2-blog-link" href="#">
+                                        <div class="index-2-hot-2-blog">
+                                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 index-2-hot-2-blog-img">
+                                                <img src="http://img.lemeitu.com/m00/ab/e5/829c7ccaabc4d620326453bfc74b3f79__w.jpg"
+                                                     alt="" class="imgScale img-responsive">
+                                            </div>
+                                            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+                                                <div class="index-2-hot-2-blog-text">
+                                                    <h4 class="omitOne"><strong>很多人不需要说再见，因为</strong></h4>
+                                                    <p class="omitTwo">在本章中，我们将学习 Bootstrap 对图片的支持。Bootstrap
+                                                        提供了三个可对图片应用简单样式的 class：</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 index-2-hot-2-blog-col">
+                                    <a class="tagScale index-2-hot-2-blog-link" href="#">
+                                        <div class="index-2-hot-2-blog">
+                                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 index-2-hot-2-blog-img">
+                                                <img src="http://img.lemeitu.com/m00/ab/e5/829c7ccaabc4d620326453bfc74b3f79__w.jpg"
+                                                     alt="" class="imgScale img-responsive">
+                                            </div>
+                                            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+                                                <div class="index-2-hot-2-blog-text">
+                                                    <h4 class="omitOne"><strong>很多人不需要说再见，因为</strong></h4>
+                                                    <p class="omitTwo">在本章中，我们将学习 Bootstrap 对图片的支持。Bootstrap
+                                                        提供了三个可对图片应用简单样式的 class：</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="row index-2-hot-2-row">
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 index-2-hot-2-blog-col">
+                                    <a class="tagScale index-2-hot-2-blog-link" href="#">
+                                        <div class="index-2-hot-2-blog">
+                                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 index-2-hot-2-blog-img">
+                                                <img src="http://img.lemeitu.com/m00/ab/e5/829c7ccaabc4d620326453bfc74b3f79__w.jpg"
+                                                     alt="" class="imgScale img-responsive">
+                                            </div>
+                                            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+                                                <div class="index-2-hot-2-blog-text">
+                                                    <h4 class="omitOne"><strong>很多人不需要说再见，因为</strong></h4>
+                                                    <p class="omitTwo">在本章中，我们将学习 Bootstrap 对图片的支持。Bootstrap
+                                                        提供了三个可对图片应用简单样式的 class：</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 index-2-hot-2-blog-col">
+                                    <a class="tagScale index-2-hot-2-blog-link" href="#">
+                                        <div class="index-2-hot-2-blog">
+                                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 index-2-hot-2-blog-img">
+                                                <img src="http://img.lemeitu.com/m00/ab/e5/829c7ccaabc4d620326453bfc74b3f79__w.jpg"
+                                                     alt="" class="imgScale img-responsive">
+                                            </div>
+                                            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+                                                <div class="index-2-hot-2-blog-text">
+                                                    <h4 class="omitOne"><strong>很多人不需要说再见，因为</strong></h4>
+                                                    <p class="omitTwo">在本章中，我们将学习 Bootstrap 对图片的支持。Bootstrap
+                                                        提供了三个可对图片应用简单样式的 class：</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 其他内容区 -->
+                <% for (const item0 in theme.menu) { %>
+                    <% if (theme.menu[item0].item) { %>
+                        <div id="<%= item0 %>" class="tab-pane fade">
+                            <div class="row">
+                                <!-- 二级标题导航 -->
+                                <div class="col-lg-2 col-md-2 col-sm-3 col-xs-3">
+                                    <ul class="nav nav-pills nav-stacked pre-scrollable">
+                                        <% theme.menu[item0].item.forEach((item1, index1) => { %>
+                                            <% if (item1 instanceof Array) { %>
+                                                <% item1.forEach((item2, index2) => { %>
+                                                    <% for (const item3 in item2) { %>
+                                                        <% if (index1 == 0 && index2 == 0) { %>
+                                                            <li class="active"><a class="omitOne" data-toggle="tab"
+                                                                                  href="#<%= item3 %>"><%= __(item3) %></a>
+                                                            </li>
+                                                        <% } else { %>
+                                                            <li><a class="omitOne" data-toggle="tab"
+                                                                   href="#<%= item3 %>"><%= __(item3) %></a></li>
+                                                        <% } %>
+                                                    <% } %>
+                                                <% }) %>
+                                            <% } else { %>
+                                                <% for (const item3 in item1) { %>
+                                                    <% if (index1 == 0) { %>
+                                                        <li class="active"><a class="omitOne" data-toggle="tab"
+                                                                              href="#<%= item3 %>"><%= __(item3) %></a>
+                                                        </li>
+                                                    <% } else { %>
+                                                        <li><a class="omitOne" data-toggle="tab"
+                                                               href="#<%= item3 %>"><%= __(item3) %></a>
+                                                        </li>
+                                                    <% } %>
+                                                <% } %>
+                                            <% } %>
+                                        <% }); %>
+                                    </ul>
+                                </div>
+                                <!-- 二级内容栏 -->
+                                <div class="col-lg-10 col-md-10 col-sm-9 col-xs-9">
+                                    <div class="tab-content">
+                                        <% if (theme.menu[item0].item) { %>
+                                            <% theme.menu[item0].item.forEach((item1, index1) => { %>
+                                                <% if (item1 instanceof Array) { %>
+                                                    <% item1.forEach((item2, index2) => { %>
+                                                        <% for (const item3 in item2) { %>
+                                                            <% if (index1 == 0 && index2 == 0) { %>
+                                                                <!-- 推荐内容区 -->
+                                                                <div id="<%= item3 %>" class="tab-pane fade in active">
+                                                                    <div class="row index-2-other-main">
+                                                                        <!-- 优质推荐 -->
+                                                                        <div class="col-gl-5 col-md-5 col-sm-4 col-xs-4 index-2-other-1">
+                                                                            <div class="row">
+                                                                                <div class="col-lg-1 col-md-1 col-md-1 col-xs-1"></div>
+                                                                                <div class="col-gl-10 col-md-10 col-sm-9 col-xs-8 index-2-other-1-col">
+                                                                                    <a href="#"
+                                                                                       class="imgScale-other index-2-other-1-link">
+                                                                                        <div class="index-2-other-1-blog">
+                                                                                            <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1571997717138&di=b9ca146da5c1839961f4386af3367257&imgtype=0&src=http%3A%2F%2Fwww.juimg.com%2Ftuku%2Fyulantu%2F140726%2F330627-140H621534489.jpg"
+                                                                                                 alt=""
+                                                                                                 class="img-responsive imgScale-filter index-2-other-1-blog-img">
+                                                                                            <h4 class="omitOne index-2-other-1-blog-title">
+                                                                                                <strong>电脑咖啡_咖啡和电脑PNG素材-90设计</strong>
+                                                                                            </h4>
+                                                                                        </div>
+                                                                                    </a>
+                                                                                </div>
+                                                                                <div class="col-lg-1 col-md-1 col-md-1 col-xs-1"></div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <!-- 默认推荐 -->
+                                                                        <div class="col-gl-7 col-md-7 col-sm-8 col-xs-7 index-2-other-2">
+                                                                            <div class="panel-group" id="accordion">
+                                                                                <div class="panel panel-default">
+                                                                                    <div class="panel-heading">
+                                                                                        <h4 class="panel-title">
+                                                                                            <a class="omitOne index-2-other-2-blog-link"
+                                                                                               data-toggle="collapse"
+                                                                                               data-parent="#accordion"
+                                                                                               href="#collapse<%= item3 %>">
+                                                                                                <strong>1、点击我进行展开</strong>
+                                                                                            </a>
+                                                                                        </h4>
+                                                                                    </div>
+                                                                                    <div id="collapse<%= item3 %>"
+                                                                                         class="panel-collapse collapse in">
+                                                                                        <div class="panel-body">
+                                                                                            <a href="#">
+                                                                                                <p class="omitTwo">
+                                                                                                    dfsjfkllkdfjsflkfkldsgjlk
+                                                                                                </p>
+                                                                                            </a>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            <% } else { %>
+                                                                <div id="<%= item3 %>"
+                                                                     class="tab-pane fade">
+                                                                    
+                                                                </div>
+                                                            <% } %>
+                                                        <% } %>
+                                                    <% }) %>
+                                                <% } else { %>
+                                                    <% for (const item3 in item1) { %>
+                                                        <% if (index1 == 0) { %>
+
+                                                        <% } else { %>
+
+                                                        <% } %>
+                                                    <% } %>
+                                                <% } %>
+                                            <% }) %>
+                                        <% } %>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    <% } %>
+                <% } %>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="/js/index/2.js"></script>

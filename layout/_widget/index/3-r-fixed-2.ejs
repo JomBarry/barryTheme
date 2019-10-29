@@ -1,0 +1,13 @@
+
+<!-- 右窗口-fixed-2 -->
+<link rel="stylesheet" href="/css/index/3-r-fixed-2.css">
+<div class="index-3-r-fixed-2-main">
+    <h3 class="index-3-r-fixed-2-title"><strong><%= theme.index_3_r_fixed_2.title %></strong></h3>
+    <div class="index-3-r-fixed-2-content">
+        <address>
+            <% for (const item0 in theme.index_3_r_fixed_2.content) { %>
+                <strong><a href="<%= theme.index_3_r_fixed_2.content[item0] %>" target="_blank"><%= item0 %></a></strong> |
+            <% } %>
+        </address>
+    </div>
+</div>

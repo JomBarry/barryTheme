@@ -1,0 +1,12 @@
+<!-- loading -->
+<div id="loadingStyle">
+    <%- partial('demo/' + theme.loadingStyle + '.ejs') %>
+    <script>
+        $(window).on('load', function () {
+            $('#loading').addClass('animated fadeOut');
+            setTimeout(function () {
+                $('#loadingStyle').remove();
+            }, 1000);
+        })
+    </script>
+</div>

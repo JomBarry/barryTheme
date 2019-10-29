@@ -1,0 +1,17 @@
+
+.index-3-r-1-main {
+    padding: 35px 15px 15px 15px;
+    background-color: white;
+}
+
+.index-3-r-1-title {
+    margin: 0 0 15px;
+    padding: 0 5px;
+    border-bottom: #777777 solid 1px;
+    border-image: linear-gradient(to top, #cc208e 0%, #6713d2 100%) 30;
+    border-bottom: solid 1px;
+}
+
+.index-3-r-1-content {
+    margin-top: 15px;
+}

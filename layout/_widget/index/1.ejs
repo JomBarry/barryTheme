@@ -1,0 +1,102 @@
+<!-- index-1 -->
+<link rel="stylesheet" href="/css/index/1.css">
+<div class="row index-1-main">
+    <div class="container">
+        <!-- Banner模块 -->
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 index-1-banner">
+            <div id="myCarousel" class="carousel slide animated fadeIn">
+                <!-- 轮播（Carousel）指标 -->
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ol>
+                <!-- 轮播（Carousel）项目 -->
+                <div class="carousel-inner">
+                    <% theme.IndexBanner.forEach((item, index) => { %>
+                        <% if (index == 0) { %>
+                            <div class="item active">
+                                <img src="<%= item %>" alt="First slide" class="img-responsive">
+                            </div>
+                        <% } else { %>
+                            <div class="item">
+                                <img src="<%= item %>" alt="First slide" class="img-responsive">
+                            </div>
+                        <% } %>
+                    <% }); %>
+                </div>
+                <!-- 轮播（Carousel）导航 -->
+                <div class="index-1-banner-Carousel">
+                    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- 其他功能模块 在手机不显示 -->
+        <div class="col-lg-3 col-md-3 hidden-sm hidden-xs index-1-other">
+            <% site.categories.forEach(item0 => { %>
+                <% if (item0.name == "diary") { %>
+                    <% item0.posts.forEach(item1 => { %>
+                        <a href="#" class="imgScale-other">
+                            <div class="row index-1-other-row">
+                                <div class="col-lg-12 col-md-12 index-1-other-col">
+                                    <div class="animated pulse index-1-other-content">
+                                        <img class="index-1-other-img imgScale"
+                                             src="<%= item1.thumbnail %>">
+                                        <div href="index-1-other-test">
+                                            <h4 class="index-1-other-title omitOne">
+                                                <strong><%= item1.title %></strong>
+                                            </h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    <% }); %>
+                <% } %>
+            <% }); %>
+        </div>
+        <!-- 关于模块 在手机不显示 -->
+        <div class="col-lg-3 col-md-3 hidden-sm hidden-xs index-1-userCard">
+            <div class="row">
+                <a href="#" class="index-1-userCard-about-a">
+                    <img src="/images/index/1/nail.png" alt="" class="img-rounded img-responsive">
+                    <div class="col-lg-12 col-md-12 index-1-userCard-about animated swing">
+                        <% for (const item1 in theme.index_1_3) { %>
+                            <h3 class="index-1-userCard-about-title"><strong><%= item1 %></strong></h3>
+                            <% for (const item2 in theme.index_1_3[item1]) { %>
+                                <address>
+                                    <strong class="omitOne"><%= item2 %></strong><br>
+                                    <% for (const item3 in theme.index_1_3[item1][item2]) { %>
+                                        <p class="omitOne" style="margin: 0;">
+                                            <%= item3 %>：<%= theme.index_1_3[item1][item2][item3] %>
+                                        </p>
+                                    <% } %>
+                                </address>
+                            <% } %>
+                        <% } %>
+                    </div>
+                </a>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 col-md-12 index-1-userCard-connection animated pulse">
+                    <% let index = 0; %>
+                    <% for (const item0 in theme.index_1_3_1) { %>
+                        <div class="col-lg-3 col-md-3 index-1-userCard-connection-<%= index %>">
+                            <a href="<%= theme.index_1_3_1[item0] %>">
+                                <img src="<%= item0 %>" class="index-1-userCard-connection-img">
+                            </a>
+                        </div>
+                    <% index++; } %>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="/js/index/1.js"></script>

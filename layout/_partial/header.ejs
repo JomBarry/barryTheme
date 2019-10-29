@@ -1,0 +1,65 @@
+<!-- header -->
+<nav class="navbar navbar-fixed-top animated fadeInDown header-main">
+    <div class="container">
+        <!-- Logo -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1" aria-expanded="true">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#"><%= config.title %></a>
+        </div>
+        <!-- Search -->
+        <span class="glyphicon glyphicon-search navbar-right hidden-xs nav-search-masthead" role="button"
+              aria-hidden="true"></span>
+        <form class="navbar-form visible-xs">
+            <div class="form-group visible-xs-inline-block">
+                <input type="text" class="form-control" placeholder="Search">
+            </div>
+            <button type="submit" class="btn btn-default">Submit</button>
+        </form>
+        <!-- Nav -->
+        <div class="collapse navbar-collapse navbar-right nav-nav-main" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav nav-nav-main-content">
+                <% for (const TMenuItem in theme.menu) { %>
+                    <%# 判断是否为所在项 %>
+                    <% if( '/' + page.path == theme.menu[TMenuItem].url && !theme.menu[TMenuItem].item ) { %>
+                        <li class="active nav-nav-main-title">
+                            <a href="<%= theme.menu[TMenuItem].url %>"><%= __(TMenuItem) %></a>
+                        </li>
+                    <% } else if(theme.menu[TMenuItem].item) { %>
+                        <li class="dropdown">
+                            <a href="<%= theme.menu[TMenuItem].url %>" class="dropdown-toggle" data-toggle="dropdown"
+                               role="button"
+                               aria-haspopup="true"
+                               aria-expanded="false"><%= __(TMenuItem) %><span class="caret"></span></a>
+                            <ul class="dropdown-menu animated fadeIn">
+                                <% theme.menu[TMenuItem].item.forEach((item, index) => { %>
+                                    <% if (index != 0) { %>
+                                        <li role="separator" class="divider"></li>
+                                    <% } %>
+                                    <% if (item instanceof Array) { %>
+                                        <% item.forEach(item => { %>
+                                            <% for( const item1 in item ) { %>
+                                                <li><a href="<%= item[item1] %>"><%= __(item1) %></a></li>
+                                            <% } %>
+                                        <% }) %>
+                                    <% } else { %>
+                                        <% for( const item1 in item ) { %>
+                                            <li><a href="<%= item[item1] %>"><%= __(item1) %></a></li>
+                                        <% } %>
+                                    <% } %>
+                                <% }) %>
+                            </ul>
+                        </li>
+                    <% } else { %>
+                        <li><a href="<%= theme.menu[TMenuItem].url %>"><%= __(TMenuItem) %></a></li>
+                    <% } %>
+                <% } %>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>

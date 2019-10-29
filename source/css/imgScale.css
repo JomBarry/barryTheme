@@ -1,0 +1,35 @@
+/* 需要设置高度 */
+.imgScale {
+    width: 100%;
+    /*cursor: pointer; !*让鼠标显示小手*!*/
+    transition: 1s; /*过渡时间(缓慢放大时间)*/
+}
+
+.imgScale:hover {
+    transform: scale(1.1); /*放大*/
+}
+
+/* 点击另外组件放大效果 */
+.imgScale-other:hover .imgScale {
+    transform: scale(1.1); /*放大*/
+}
+
+/* 设置有模糊度 */
+.imgScale-filter {
+    width: 100%;
+    /*cursor: pointer; !*让鼠标显示小手*!*/
+    transition: 1s; /*过渡时间(缓慢放大时间)*/
+    filter: blur(1px);
+    -webkit-filter: blur(1px); /* chrome, opera */
+    -ms-filter: blur(1px);
+    -moz-filter: blur(1px);
+}
+
+.imgScale-filter:hover {
+    transform: scale(1.1); /*放大*/
+}
+
+/* 模糊图片其他组件放大效果 */
+.imgScale-other:hover .imgScale-filter {
+    transform: scale(1.1); /*放大*/
+}

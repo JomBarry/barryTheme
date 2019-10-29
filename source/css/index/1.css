@@ -1,0 +1,112 @@
+/* Total settings */
+.index-1-main {
+    margin: 5px 0 0;
+    padding: 10px 0;
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+}
+
+.index-1-main, .index-1-main > .container, .index-1-banner, .index-1-other, .index-1-userCard {
+    height: 320px;
+}
+
+/* Banner */
+.index-1-banner {
+    padding-left: 0;
+}
+
+.index-1-banner .carousel-inner > div img {
+    width: 100%;
+    height: 300px;
+}
+
+.index-1-banner-Carousel {
+    visibility: hidden;
+}
+
+.index-1-banner, .index-1-other {
+    padding-right: 0;
+}
+
+/* index-1-2 */
+.index-1-other-row {
+    height: calc(280px / 3);
+    margin-bottom: 10px;
+}
+
+.index-1-other-row :last-child {
+    margin-bottom: 0 !important;
+}
+
+.index-1-other-content {
+    position: relative;
+    overflow: hidden;
+    background-color: #000000;
+}
+
+.index-1-other-img {
+    height: calc(280px / 3);
+    opacity: 0.6;
+}
+
+.index-1-other-title {
+    width: calc(100% / 1.5);
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+}
+
+/* index-1-3 */
+.index-1-userCard > div {
+    padding-left: 15px;
+}
+
+.index-1-userCard-about-a {
+    display: block;
+    position: relative;
+}
+
+.index-1-userCard-about-a > img {
+    position: absolute;
+    z-index: 2;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    height: 60px;
+}
+
+.index-1-userCard-about {
+    padding: 20px 15px 0 15px;
+    background-image: linear-gradient(to top, #868f96 0%, #596164 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    color: whitesmoke;
+}
+
+.index-1-userCard-about-title {
+    margin: 0;
+    padding: 0 3px;
+    border-bottom: #9d9d9d solid 1px;
+}
+
+.index-1-userCard-about > address {
+    margin: 10px 3px 0;
+}
+
+.index-1-userCard-about > address:last-child {
+    margin-bottom: 10px;
+}
+
+.index-1-userCard-about > address > p {
+    width: 100%;
+}
+
+.index-1-userCard-connection {
+    margin-top: 5px;
+    background-image: linear-gradient(to right, #868f96 0%, #596164 100%);
+}
+
+.index-1-userCard-connection-img {
+    width: 100%;
+}

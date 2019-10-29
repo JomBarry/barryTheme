@@ -1,0 +1,19 @@
+
+.index-3-r-fixed-1-main {
+    margin-top: 15px;
+    padding: 15px;
+    background-color: white;
+}
+
+.index-3-r-fixed-1-title {
+    padding: 0 5px;
+    border-bottom: #777777 solid 1px;
+    border-image: linear-gradient(to top, #cc208e 0%, #6713d2 100%) 30;
+    border-bottom: solid 1px;
+    margin-bottom: 15px;
+}
+
+.index-3-r-fixed-1-connection{
+    width: calc(100%/1.5);
+    margin-top: 15px;
+}

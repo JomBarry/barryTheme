@@ -1,0 +1,164 @@
+/* Total settings */
+.index-2-main {
+    margin: 15px 0 0 0;
+    height: 470px;
+}
+
+.index-2-container {
+    padding-top: 15px;
+    position: relative;
+}
+
+.index-2-container > img {
+    height: 140px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.index-2-content {
+    padding: 50px 50px 15px 50px;
+    background-color: white;
+}
+
+/* 标题区、一级导航样式 */
+.index-2-titles {
+    position: relative;
+    -moz-border-image: linear-gradient(to top, #cc208e 0%, #6713d2 100%) 30; /* Old Firefox */
+    -webkit-border-image: linear-gradient(to top, #cc208e 0%, #6713d2 100%) 30; /* Safari and Chrome */
+    -o-border-image: linear-gradient(to top, #cc208e 0%, #6713d2 100%) 30; /* Opera */
+    border-image: linear-gradient(to top, #cc208e 0%, #6713d2 100%) 30;
+    border-bottom: solid 2px;
+}
+
+.index-2-title {
+    display: inline-block;
+    padding: 0 10px 3px 10px;
+    -moz-border-image: linear-gradient(to top, #cc208e 0%, #6713d2 100%) 30; /* Old Firefox */
+    -webkit-border-image: linear-gradient(to top, #cc208e 0%, #6713d2 100%) 30; /* Safari and Chrome */
+    -o-border-image: linear-gradient(to top, #cc208e 0%, #6713d2 100%) 30; /* Opera */
+    border-image: linear-gradient(to top, #cc208e 0%, #6713d2 100%) 30;
+    border-bottom: solid 2px;
+    margin: 0;
+}
+
+.index-2-titles > .nav-tabs {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding-right: 20px;
+}
+
+/* =============== 内容区样式 ================= */
+.index-2-content > .tab-content {
+    margin-top: 15px;
+}
+
+/* =========== Hot区 ================ */
+.index-2-hot-1-col, .index-2-hot-1-link, .index-2-hot-2-col {
+    height: 336px;
+}
+
+.index-2-hot-1-col {
+    padding: 0;
+}
+
+.index-2-hot-1-link {
+    padding: 10px 15px;
+    display: block;
+    text-decoration: none;
+}
+
+.index-2-hot-1-blog, .index-2-hot-1-blog-img {
+    overflow: hidden;
+}
+
+.index-2-hot-1-blog-desc {
+    border-bottom: #3c3c3c solid 1px;
+}
+
+.index-2-hot-1-blog-desc > div {
+    display: inline-block
+}
+
+.index-2-hot-2-row {
+    padding-right: 15px;
+}
+
+.index-2-hot-2-blog-col {
+    height: 112px;
+    padding: 0;
+}
+
+.index-2-hot-2-blog-link {
+    padding: 10px;
+    display: block;
+}
+
+.index-2-hot-2-blog {
+    overflow: hidden;
+}
+
+.index-2-hot-2-blog-img {
+    height: 92px;
+    overflow: hidden;
+    float: left;
+    padding: 0;
+}
+
+.index-2-hot-2-blog-img > img {
+    height: 100%;
+}
+
+/* ========== 其他推荐内容区 ========== */
+/* 优质推荐 */
+.index-2-other-main {
+    padding: 8px 0;
+}
+
+.index-2-other-1 {
+    padding: 0;
+}
+
+.index-2-other-1-link {
+    display: block;
+    height: calc(100% / 3 - 20px);
+    margin-bottom: 10px;
+}
+
+.index-2-other-1-link:last-child {
+    margin-bottom: 0 !important;
+}
+
+.index-2-other-1-blog {
+    height: 100px;
+    overflow: hidden;
+    position: relative;
+}
+
+.index-2-other-1-blog-img {
+    height: 100%;
+    width: 100%;
+}
+
+.index-2-other-1-blog-title {
+    width: calc(100% / 1.5);
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -25%);
+    color: gray;
+}
+
+/* 默认推荐 */
+.index-2-other-2-blog-link {
+    width: 100%;
+    text-decoration: none;
+}
+
+.index-2-other-2-blog-link > strong {
+    background-image: linear-gradient(to right, #243949 0%, #517fa4 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

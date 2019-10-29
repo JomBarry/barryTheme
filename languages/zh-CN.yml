@@ -1,0 +1,53 @@
+categories: 分类
+search: 搜索
+tags: 标签
+tagcloud: 标签云
+tweets: 推文
+prev: 上一页
+next: 下一页
+comment: 留言
+archive_a: 归档
+archive_b: 归档：%s
+page: 第 %d 页
+recent_posts: 最新文章
+newer: Newer
+older: Older
+share: Share
+powered_by: Powered by
+rss_feed: RSS Feed
+category: Category
+tag: Tag
+
+## 数据控制器
+
+# 总导航(nav)
+menu: 菜单
+Home: 主页
+Diary: 个人日记
+ProgramLanguage: 编程语言
+C: C语言
+Hexo: Hexo
+Android: Android
+Html: Html
+CSS: CSS
+JavaScript: JavaScript
+VueJS: VueJS
+PHP: PHP
+WeChatMiniProgram: 微信小程序
+Java: Java
+Spring: Spring
+SpringBoot: Spring Boot
+SpringCloud: Spring Cloud
+MySQL: MySQL
+MariaDB: MariaDB
+NetworkTech: 网络技术
+NetworkTechnology: 网络技术
+NetworkSecurity: 网络安全
+SoftwareUse: 软件使用
+AnroidStudio: Anroid Studio
+Idea: Idea
+Git: Git
+WechtDevelopmentTools: 微信开发者工具
+TimerShaft: 时间轴
+About: 关于
+

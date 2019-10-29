@@ -1,0 +1,23 @@
+
+.index-3-r-2-main {
+    margin-top: 15px;
+    padding: 0.1px 15px 15px 15px;
+    background-color: white;
+}
+
+.index-3-r-2-title {
+    padding: 0 5px;
+    border-bottom: #777777 solid 1px;
+    border-image: linear-gradient(to top, #cc208e 0%, #6713d2 100%) 30;
+    border-bottom: solid 1px;
+    margin-bottom: 15px;
+}
+
+.index-3-r-2-content>a{
+    text-decoration: none;
+}
+
+.index-3-r-2-text {
+    margin: 5px 0;
+    display: inline-block;
+}
